@@ -1,0 +1,60 @@
+{
+    "task": "classification",
+    "experiment_name": "experiment_1",
+    "model_requirements": {
+        "min_accuracy": 0.55,
+        "max_memory": 1048576,
+        "max_single_predict_time": 40,
+        "max_train_time": 100
+    },
+    "search_space": {
+        "AdaBoost": true,
+        "XGBoost": true,
+        "Bagging(SVC)": true,
+        "MLP": true,
+        "HistGB": false,
+        "Ridge": false,
+        "LinearSVC": false,
+        "PassiveAggressive": false,
+        "LogisticRegression": false,
+        "LDA": false,
+        "QDA": false,
+        "Perceptron": false,
+        "SVM": true,
+        "RandomForest": true,
+        "xRandTrees": true,
+        "ELM": false,
+        "DecisionTree": false,
+        "SGD": false,
+        "KNeighbors": false,
+        "NearestCentroid": false,
+        "GaussianProcess": false,
+        "LabelSpreading": false,
+        "BernoulliNB": false,
+        "GaussianNB": false,
+        "DBN": false,
+        "FactorizationMachine": false,
+        "PolynomialNetwork": false
+    },
+    "search_options": {
+        "duration": 740,
+        "iterations": 100,
+        "metric": "accuracy",
+        "validation": "10 fold CV",
+        "saved_top_models_amount": "All"
+    },
+    "paths": {
+        "DS_abs_path": "C:\\Uni\\Dip\\dataset\\spambase_csv.csv",
+        "CD_abs_path": "C:\\Users\\mart1\\Documents\\column_description.csv"
+    },
+    "global_variables": {
+        "DS_name": null,
+        "DS_type": null,
+        "CD_name": null,
+        "CD_type": null,
+        "target_column": null,
+        "categ_columns": null,
+        "text_columns": null,
+        "num_columns": null
+    }
+}
